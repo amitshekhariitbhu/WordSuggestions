@@ -3,5 +3,5 @@ project(WordSuggestions)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp Node.cpp Node.h Trie.cpp Trie.h)
+set(SOURCE_FILES main.cpp Node.cpp Node.h Trie.cpp Trie.h Suggestion.cpp Suggestion.h Utils.cpp Utils.h)
 add_executable(WordSuggestions ${SOURCE_FILES})
