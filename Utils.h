@@ -11,7 +11,7 @@
 class Utils {
 public:
     static bool loadDictionary(Trie* trie,string path);
+    static string boolToString(bool b);
 };
-
 
 #endif //WORDSUGGESTIONS_UTILS_H

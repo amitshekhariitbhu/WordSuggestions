@@ -29,3 +29,8 @@ bool Utils::loadDictionary(Trie* trie,string path){
     }
     return true;
 }
+
+string Utils::boolToString(bool b)
+{
+    return b ? "true" : "false";
+}
