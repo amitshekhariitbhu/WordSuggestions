@@ -16,8 +16,8 @@ int main()
         transform(s.begin(), s.end(), s.begin(), ::tolower);
 
         if(s.compare("0")==0){
-            cout<<"successfully exited"<<endl;
             suggestion->destroy();
+            cout<<"successfully exited"<<endl;
             break;
         }
         suggestion->getSuggestion(s);

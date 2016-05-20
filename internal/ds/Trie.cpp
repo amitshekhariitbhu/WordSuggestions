@@ -11,7 +11,7 @@ Trie::Trie()
 
 Trie::~Trie()
 {
-    // Free memory
+    cout<<"Free memory of Trie"<<endl;
 }
 
 void Trie::addWord(string s)
@@ -65,27 +65,6 @@ bool Trie::searchWord(string s)
     }
 
     return false;
-}
-
-
-bool Trie::autoComplete(std::string s, std::vector<string> &res)
-{
-    Node *current=root;
-
-    for ( int i = 0; i < s.length(); i++ )
-    {
-        Node* tmp = current->findChild(s[i]);
-        if ( tmp == NULL )
-            return false;
-        current = tmp;
-    }
-
-    char c[100];
-    strcpy(c,s.c_str());
-    bool loop=true;
-    parseTree(current,c,res,loop);
-    return true;
-
 }
 
 void Trie::parseTree(Node *current, char *s,std::vector<string> &res,bool& loop)
