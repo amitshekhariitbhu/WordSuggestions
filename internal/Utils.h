@@ -6,7 +6,7 @@
 #define WORDSUGGESTIONS_UTILS_H
 
 
-#include "Trie.h"
+#include "ds/Trie.h"
 
 class Utils {
 public:

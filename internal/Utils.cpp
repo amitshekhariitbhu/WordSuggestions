@@ -5,6 +5,7 @@
 #include <fstream>
 #include <iostream>
 #include "Utils.h"
+#include "ds/Trie.h"
 
 bool Utils::loadDictionary(Trie* trie,string path){
     ifstream words;

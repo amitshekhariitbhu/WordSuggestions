@@ -5,9 +5,8 @@
 #include <string>
 #include <iostream>
 #include <set>
-#include "Trie.h"
-#include "Utils.h"
-#include "EditDistance.h"
+#include "../internal/Utils.h"
+#include "../internal/EditDistance.h"
 #include "Suggestion.h"
 
 using namespace std;
