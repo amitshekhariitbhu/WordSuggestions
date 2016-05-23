@@ -1,12 +1,14 @@
 #include<iostream>
 #include "extrenal/Suggestion.h"
 
+#define WORD_LIST_FILE_PATH "/Users/amitshekhar/Documents/Development/C++/WordSuggestions/en_wordlist.txt"
+
 using namespace std;
 
 int main()
 {
     Suggestion *suggestion = new Suggestion();
-    suggestion->init("/Users/amitshekhar/Documents/Development/C++/WordSuggestions/en_wordlist.txt");
+    suggestion->init(WORD_LIST_FILE_PATH);
 
     while(1)
     {
