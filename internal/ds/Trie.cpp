@@ -58,10 +58,7 @@ bool Trie::searchWord(string s)
             current = tmp;
         }
 
-        if ( current->wordMarker() )
-            return true;
-        else
-            return false;
+        return current->wordMarker();
     }
 
     return false;
@@ -75,7 +72,7 @@ void Trie::parseTree(Node *current, char *s,std::vector<string> &res,bool& loop)
     {
         if(current!=NULL)
         {
-            if(current->wordMarker()==true){
+            if(current->wordMarker()){
                 res.push_back(s);
                 if(res.size()>15)
                     loop=false;
