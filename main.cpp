@@ -1,7 +1,7 @@
 #include<iostream>
 #include "extrenal/Suggestion.h"
 
-#define WORD_LIST_FILE_PATH "/Users/amitshekhar/Documents/Development/C++/WordSuggestions/en_wordlist.txt"
+#define WORD_LIST_FILE_PATH "Put your WORD_LIST_FILE_PATH here"
 
 using namespace std;
 
